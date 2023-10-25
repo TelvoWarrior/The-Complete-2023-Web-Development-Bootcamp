@@ -1,0 +1,24 @@
+/*Это первоначальный файл со стилями. 
+В этом файле стили созданы интуитивно.
+В процессе просмотра решения задачи, я исправил стили, а 
+первоначальные оставил для архива.*/
+body {
+    background-color: black;
+}
+h1 {
+    text-transform: uppercase;
+}
+h1, p {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align: center;
+}
+img {
+    width: 100%;
+    border: 5px solid white;
+}
+div {
+    width: 50%;
+    margin-left: 25%;
+}
