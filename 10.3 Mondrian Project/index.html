@@ -19,11 +19,78 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color:#000;
+      grid-template-columns: 320px auto;
+      grid-template-rows: 414px auto;
+      gap: 9px;
+    }
+    .grid-item {
+      background-color: #F0F1EC;
+    }
+    .grid-container2 {/*3 див айтем, контейнер*/
+      display: grid;
+      grid-template-columns: 320px;
+      grid-template-rows: 296px 29px;
+    }
+    .grid-containter3 {/*четвертый див айтем, контейнер*/
+      display: grid;
+      grid-template-columns: 360px 59px;
+      grid-template-rows: 325px;
+    }
+    .grid-containter3-1 {
+      display: grid;
+      grid-template-columns: 360px;
+      grid-template-rows: 296px 29px;
+    }
+    .grid-container3-1-1 {
+      display: grid;
+      grid-template-rows: 20px;
+      grid-template-columns: 198px 162px;
+      border-top: 9px solid black;
+    }
+    .grid-container3-2 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows:140px 184px;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="flex-container"><!-- Внешний flex контейнер, который позволяет расположить по центру grid контейнер -->
+    <div class="grid-container"><!-- Grid контейнер с заданными размерами -->
+      <div class="grid-item" style="background-color: #E72F24;"></div><!-- Первый grid item с доп свойством: заливка красным цветом-->
+      <div class="grid-item"></div>
+      <div class="grid-item grid-container2"> <!-- третий див айтем контейнер-->
+        <div></div>
+        <div style="border-top: 9px solid black"></div>
+      </div>
+      <div class="grid-item grid-containter3"><!-- четвертый див айтем, контейнер-->
+        <div class="grid-containter3-1">
+          <div></div>
+          <div class="grid-container3-1-1">
+            <div style="background-color: #F9D01E;"></div>
+            <div style="background-color: #232629; border-left: 9px solid black;"></div>
+          </div>
+        </div>
+        <div style="border-left: 9px solid black;" class="grid-container3-2">
+          <div style="border-bottom: 19px solid black; background-color: #004592;"></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
