@@ -11,5 +11,8 @@
     "Code"
   ],
   "author": "Artsiom Aliakseyeu",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
 }
