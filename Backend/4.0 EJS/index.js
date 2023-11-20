@@ -9,9 +9,8 @@ const port = 3000;
 var sentence = myMiddleware();
 function myMiddleware() {
     var date = new Date();
-    var today = date.getDay();
-    console.log(`Today is ${today}`);
-    if (today<=5) {
+    var today = date.getDay();;
+    if ((today<=5)&&(today>0)) {
         sentence="Hey! It's a weekday, it's time to work hard!";
     } else {
         sentence="Hey! It's the weekend, it's time to have fun!";
